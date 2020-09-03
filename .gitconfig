@@ -1,0 +1,26 @@
+[core]
+        longpaths = true
+        whitespace = cr-at-eol,tab-in-indent
+        autocrlf = true
+[commit]
+        template = C:/Program Files/Git/mingw64/share/git-core/templates/csp-brief-template.txt
+[color]
+        ui = true
+[diff]
+        tool = vimdiff
+[user]
+        name = Alex Gustafson
+[alias]
+        sup = submodule update --init --recursive
+        pdevcosmosprivate = push origin HEAD:refs/drafts/development/cosmos%private
+        pdevcosmos = push origin HEAD:refs/for/development/cosmos
+        pdevgeminiprivate = push origin HEAD:refs/for/master%private
+        pdevgemini = push origin HEAD:refs/for/master
+        sd = diff --submodule=log
+        lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+[rerere]
+        enabled = false
+[clangFormat]
+        binary = C:/Program Files/LLVM/bin/clang-format.exe
+        extensions = c,cpp,h,hpp
+
